@@ -11,5 +11,38 @@
      <a href="index.html">Beranda</a>
      <a href="tentang.html">Tentang</a>
      <a href="hubungi.html">Hubungi kami</a>
+
+     <!-- Form -->
+      <form action="submit.html" method="post">
+        NPM <br>
+        <input type="text" name="npm" id="npm"> <br>
+        Nama <br>
+        <input type="text" name="nama" id="nama"> <br>
+        Email <br>
+        <input type="text" name="email" id="email"> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="tglLahir" id="tglLahir"> <br>
+        Kota lahir <br>
+        <select name="kotaLahir" id="kotaLahir">
+            <option value="JKT">Jakarta</option>
+            <option value="PLG">Palembang</option>
+            <option value="BTM">Batam</option>
+        </select> <br>
+
+        Jenis Kelamin <br>
+        <input type="radio" name="jk" id="L" checked>Laki laki <br>
+        <input type="radio" name="jk" id="P">Perempuan <br>
+        Mengetahui UMDP dari mana? <br>
+        <input type="checkbox" name="cb1" value="K"> Keluarga <br>
+        <input type="checkbox" name="cb2" value="S"> Social Media <br>
+        
+        Foto <br>
+        <input type="file" name="foto" id=""> <br>
+        <button type="submit">Simpan</button>
+        <button type="reset">Reset</button>
+        
+      </form>
+
+
 </body>
 </html>
