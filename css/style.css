@@ -1,0 +1,33 @@
+/* elemen selector */
+/* referensi web coorhunt.co */
+body{ 
+    background-color: #5d62fc;
+    color: rgb(235, 241, 227);
+    font-family: verdana;
+}
+
+.txt-center {text-align: center;}
+.bg-warning {background-color: yellow; border-radius: 20px;}
+.txt-black {color: rgb(15, 15, 15);}
+.p-1 { padding: 25px; } /* memberi jarak sisi dalam border */
+.m-1 { margin: 20px;} /* memberi jarak sisi luar border */
+
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: aquamarine;
+}
