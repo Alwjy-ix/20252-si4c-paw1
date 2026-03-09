@@ -1,0 +1,55 @@
+*{ box-sizing: border-box;}
+
+/* hp max-width: 600px*/
+body{
+    background-color: blue;
+}
+
+.img {
+    width: 100%;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+/* clear float column */
+.row{
+    clear: both;
+}
+
+/* tablet min-width: 600px*/
+@media screen and (min-width: 600px) {
+    body {
+        background-color: green;
+    }
+    /* class selector */
+    .col-md-50 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-md-100 {
+        width: 100%;
+        float: left;
+    }
+}
+
+/* desktop mid-width: 992px*/
+@media screen and (min-width: 992px) {
+    body {
+        background-color: red;
+    }
+    /* class selector */
+    .col-lg-25 {
+        width: 25%;
+        float: left;
+    }
+
+    .col-lg-50 {
+        width: 50%;
+        float: left;
+    }
+
+}
+
