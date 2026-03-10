@@ -1,0 +1,540 @@
+<!-- langklah 1 dan 2 -->
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Praktikum Bootstrap 5</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <h1>Hello, Bootstrap!</h1>
+
+    <!-- Langkah 3 -->
+    <div class="container mt-4">
+      <h2>Grid Equal Width</h2>
+      <!-- Tanpa angka: kolom otomatis sama lebar -->
+      <div class="row">
+        <div class="col">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+              border-radius: 5px;
+            "
+          >
+            Kolom 1
+          </div>
+        </div>
+        <div class="col">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+              border-radius: 5px;
+            "
+          >
+            Kolom 2
+          </div>
+        </div>
+        <div class="col">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+              border-radius: 5px;
+            "
+          >
+            Kolom 3
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 4 -->
+    <div class="container mt-4">
+      <h2>Grid Dengan Angka</h2>
+
+      <!-- Contoh 1: 4 + 8 = 12 -->
+      <div class="row mb-3">
+        <div class="col-4">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+            "
+          >
+            col-4 (1/3 lebar)
+          </div>
+        </div>
+        <div class="col-8">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+            "
+          >
+            col-8 (2/3 lebar)
+          </div>
+        </div>
+      </div>
+
+      <!-- Contoh 2: 6 + 6 = 12 -->
+      <div class="row mb-3">
+        <div class="col-6">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+            "
+          >
+            col-6 (setengah)
+          </div>
+        </div>
+        <div class="col-6">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+            "
+          >
+            col-6 (setengah)
+          </div>
+        </div>
+      </div>
+
+      <!-- Contoh 3: 3 + 6 + 3 = 12 -->
+      <div class="row">
+        <div class="col-3">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+            "
+          >
+            col-3
+          </div>
+        </div>
+        <div class="col-6">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+            "
+          >
+            col-6
+          </div>
+        </div>
+        <div class="col-3">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+            "
+          >
+            col-3
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 5 -->
+    <div class="container mt-4">
+      <h2>Grid Responsive</h2>
+      <p><strong>Coba resize browser Anda!</strong></p>
+
+      <div class="row">
+        <!-- Di HP: full width (12), Tablet: setengah (6), Desktop: seperempat (3) -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div
+            style="
+              background: #d1e7dd;
+              padding: 15px;
+              border: 1px solid #a3cfbb;
+              margin-bottom: 10px;
+            "
+          >
+            Card 1
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div
+            style="
+              background: #d1e7dd;
+              padding: 15px;
+              border: 1px solid #a3cfbb;
+              margin-bottom: 10px;
+            "
+          >
+            Card 2
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div
+            style="
+              background: #d1e7dd;
+              padding: 15px;
+              border: 1px solid #a3cfbb;
+              margin-bottom: 10px;
+            "
+          >
+            Card 3
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div
+            style="
+              background: #d1e7dd;
+              padding: 15px;
+              border: 1px solid #a3cfbb;
+              margin-bottom: 10px;
+            "
+          >
+            Card 4
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 6 -->
+    <div class="container mt-4">
+      <h2>Nesting Grid</h2>
+      <div class="row">
+        <div
+          class="col-md-8"
+          style="background: #e7f1ff; padding: 15px; border: 1px solid #b6d4fe"
+        >
+          <strong>col-md-8 (Parent)</strong>
+          <!-- Grid di dalam grid -->
+          <div class="row mt-2">
+            <div class="col-6">
+              <div
+                style="
+                  background: #fff3cd;
+                  padding: 10px;
+                  border: 1px solid #ffecb5;
+                "
+              >
+                Nested col-6
+              </div>
+            </div>
+            <div class="col-6">
+              <div
+                style="
+                  background: #fff3cd;
+                  padding: 10px;
+                  border: 1px solid #ffecb5;
+                "
+              >
+                Nested col-6
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+              height: 100%;
+            "
+          >
+            col-md-4
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 7 -->
+    <div class="container mt-4">
+      <h2>Offset</h2>
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div
+            style="
+              background: #e7f1ff;
+              padding: 15px;
+              border: 1px solid #b6d4fe;
+              text-align: center;
+            "
+          >
+            col-md-4 offset-md-4 (posisi tengah)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 8 -->
+    <div class="container mt-4">
+      <h2>Responsive Image</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <!-- .img-fluid = max-width: 100% + height: auto -->
+          <img
+            src="https://picsum.photos/800/400?random=1"
+            class="img-fluid rounded"
+            alt="Responsive image"
+          />
+          <p class="text-muted mt-1">
+            <small>Gambar ini menyesuaikan ukuran container</small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 9 -->
+    <div class="container mt-4">
+      <h2>Image Thumbnail</h2>
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <img
+            src="https://picsum.photos/300/300?random=2"
+            class="img-thumbnail"
+            alt="Thumbnail 1"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="https://picsum.photos/300/300?random=3"
+            class="img-thumbnail"
+            alt="Thumbnail 2"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 10 -->
+    <div class="container mt-4">
+      <h2>Rounded & Circle Image</h2>
+      <div class="row align-items-center">
+        <div class="col-6 col-md-3 text-center">
+          <img
+            src="https://picsum.photos/200/200?random=4"
+            class="rounded img-fluid"
+            alt="Rounded"
+          />
+          <p class="mt-1"><code>.rounded</code></p>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <img
+            src="https://picsum.photos/200/200?random=5"
+            class="rounded-circle img-fluid"
+            alt="Circle"
+          />
+          <p class="mt-1"><code>.rounded-circle</code></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 11 -->
+    <div class="container mt-4">
+      <h2>Figure</h2>
+      <figure class="figure">
+        <img
+          src="https://picsum.photos/600/300?random=6"
+          class="figure-img img-fluid rounded"
+          alt="Figure"
+        />
+        <figcaption class="figure-caption text-center">
+          Ini adalah contoh caption pada sebuah figure.
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Langkah 12 -->
+    <div class="container mt-4">
+      <h2>Gallery Responsif</h2>
+      <!-- g-3 = gap/jarak antar kolom -->
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="https://picsum.photos/400/300?random=10"
+            class="img-fluid rounded shadow-sm"
+            alt="Gallery 1"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="https://picsum.photos/400/300?random=11"
+            class="img-fluid rounded shadow-sm"
+            alt="Gallery 2"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="https://picsum.photos/400/300?random=12"
+            class="img-fluid rounded shadow-sm"
+            alt="Gallery 3"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="https://picsum.photos/400/300?random=13"
+            class="img-fluid rounded shadow-sm"
+            alt="Gallery 4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Langkah 13 -->
+    <div class="container mt-4">
+      <h2>Display Utility</h2>
+
+      <!-- Hanya muncul di HP (< 768px) -->
+      <div class="p-3 bg-danger text-white rounded d-block d-md-none mb-2">
+        📱 <strong>Ini hanya terlihat di HP</strong>
+      </div>
+
+      <!-- Hanya muncul di Tablet (768px - 991px) -->
+      <div class="p-3 bg-warning rounded d-none d-md-block d-lg-none mb-2">
+        📟 <strong>Ini hanya terlihat di Tablet</strong>
+      </div>
+
+      <!-- Hanya muncul di Desktop (≥ 992px) -->
+      <div class="p-3 bg-success text-white rounded d-none d-lg-block mb-2">
+        🖥️ <strong>Ini hanya terlihat di Desktop</strong>
+      </div>
+    </div>
+
+    <!-- Langkah 14 -->
+    <div class="container mt-4">
+      <h2>Responsive Text</h2>
+      <!-- Tengah di HP, Kiri di Tablet ke atas -->
+      <p
+        class="text-center text-md-start"
+        style="background: #e7f1ff; padding: 15px"
+      >
+        Teks ini tengah di HP, kiri di Tablet+
+      </p>
+      <!-- Kiri di HP/Tablet, Tengah di Desktop -->
+      <p
+        class="text-start text-lg-center"
+        style="background: #e7f1ff; padding: 15px"
+      >
+        Teks ini kiri di HP/Tablet, tengah di Desktop
+      </p>
+    </div>
+
+    <!-- Langkah 15 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">🎓 Praktikum Web</a>
+        <!-- Tombol hamburger: muncul di layar < lg (992px) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu: collapse di layar kecil, expand di layar besar -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Langkah 16 dan 17 -->
+    <div class="container mt-4">
+      <h2>Portfolio Saya</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=20"
+              class="card-img-top"
+              alt="Project 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Website Toko Online</h5>
+              <p class="card-text">
+                Website e-commerce responsif dengan fitur keranjang belanja.
+              </p>
+              <span class="badge bg-primary me-1">HTML</span>
+              <span class="badge bg-success me-1">CSS</span>
+              <span class="badge bg-warning text-dark">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=21"
+              class="card-img-top"
+              alt="Project 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Landing Page Startup</h5>
+              <p class="card-text">
+                Landing page modern dengan animasi scroll dan layout responsif.
+              </p>
+              <span class="badge bg-primary me-1">HTML</span>
+              <span class="badge bg-success me-1">CSS</span>
+              <span class="badge bg-info text-dark">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/400/250?random=22"
+              class="card-img-top"
+              alt="Project 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dashboard Admin</h5>
+              <p class="card-text">
+                Panel admin dengan sidebar responsif dan grafik interaktif.
+              </p>
+              <span class="badge bg-primary me-1">HTML</span>
+              <span class="badge bg-danger me-1">SASS</span>
+              <span class="badge bg-warning text-dark">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
