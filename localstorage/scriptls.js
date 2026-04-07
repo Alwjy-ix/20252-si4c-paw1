@@ -1,7 +1,8 @@
 let npm = document.getElementById("npm");
 let nama = document.getElementById("nama");
+let image = document.getElementById("image");
 
-function simpan(){
+function simpan() {
     console.log(npm.value)
     console.log(nama.value)
 
@@ -9,7 +10,7 @@ function simpan(){
     // localStorage.setItem("nama", nama.value)
 
     //jika local sotrage belum ada isi
-    if(localStorage.getItem("mahasiswa")===null){
+    if (localStorage.getItem("mahasiswa") === null) {
         //simpan array kosong[]
         localStorage.setItem("mahasiswa", "[]")
     }
@@ -21,7 +22,8 @@ function simpan(){
     //simpan value npm dan nama ke dalam object data
     data.push({
         npm: npm.value,
-        nama: nama.value
+        nama: nama.value,
+        image: image.value
     })
     console.log(data)
 
@@ -34,15 +36,22 @@ function simpan(){
 }
 
 function tampil(){
-    //panggil dulu local storage nya
+     //panggil dulu local storage nya
     let hasil = JSON.parse(localStorage.getItem("mahasiswa"))
     // clear element ul id = list-mhs
     document.getElementById("list-mhs").innerHTML = ""
-
     //lakukan perulangan (foreach)
     hasil.forEach(element => {
-        // console.log(element)
-        document.getElementById("list-mhs").innerHTML += `<li>${element.npm} ${element.nama} </li>`
+        document.getElementById("list-mhs").innerHTML += `
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card p-2">
+                <img src="${element.image}" class="card-img-top" object-fit:contain style="height:200px;">
+                <div class="card-body">
+                    <h4 class="text-primary">${element.npm}</h4>
+                    <h6 class="text-danger">${element.nama}</h6>
+                </div>
+            </div>
+        </div>`
     });
 }
 
